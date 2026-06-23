@@ -1,0 +1,291 @@
+:root{
+  --morado:#8b5cf6;
+  --morado-oscuro:#6d28d9;
+  --rosa:#ec4899;
+  --rosa-claro:#f9a8d4;
+  --lila:#ddd6fe;
+  --blanco:rgba(255,255,255,.85);
+  --texto:#312e81;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+
+  font-family:Arial, Helvetica, sans-serif;
+
+  min-height:100vh;
+
+  background:linear-gradient(
+      135deg,
+      #c4b5fd,
+      #f9a8d4
+  );
+
+  padding:30px;
+
+}
+
+/* LOGO */
+
+.logo{
+
+  width:170px;
+
+  position:absolute;
+
+  top:20px;
+
+  right:30px;
+
+}
+
+
+/* TITULO */
+
+h1{
+
+  margin-top:140px;
+
+  text-align:center;
+
+  color:white;
+
+  font-size:2.8rem;
+
+  text-shadow:
+
+  0 0 5px white,
+
+  0 0 15px #8b5cf6,
+
+  0 0 25px #ec4899;
+
+}
+
+
+/* FORMULARIO */
+
+form{
+
+  width:420px;
+
+  margin:40px auto;
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:15px;
+
+  padding:20px;
+
+  border-radius:25px;
+
+  background:rgba(255,255,255,.2);
+
+  backdrop-filter:blur(10px);
+
+  box-shadow:0 0 20px rgba(0,0,0,.1);
+
+}
+
+
+form input[type="text"]{
+
+  flex:1;
+
+  padding:12px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:white;
+
+  color:var(--texto);
+
+  font-size:1rem;
+
+}
+
+
+form input[type="text"]:focus{
+
+outline:none;
+
+box-shadow:0 0 12px #ec4899;
+
+}
+
+
+form input[type="submit"]{
+
+width:45px;
+
+height:45px;
+
+border:none;
+
+border-radius:50%;
+
+font-size:1.4rem;
+
+background:linear-gradient(
+135deg,
+#8b5cf6,
+#ec4899
+);
+
+color:white;
+
+transition:.4s;
+
+}
+
+
+form input[type="submit"]:hover{
+
+transform:scale(1.1);
+
+box-shadow:0 0 15px #ec4899;
+
+cursor:pointer;
+
+}
+
+
+/* LISTA */
+
+.lista{
+
+width:420px;
+
+margin:auto;
+
+}
+
+
+/* TAREAS */
+
+.tareas{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:16px;
+
+margin-bottom:12px;
+
+border-radius:18px;
+
+background:rgba(255,255,255,.75);
+
+backdrop-filter:blur(10px);
+
+color:var(--texto);
+
+font-weight:600;
+
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+.tareas:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 8px 18px rgba(0,0,0,.15);
+
+}
+
+
+/* BOTON BORRAR */
+
+.borrar{
+
+font-size:1.2rem;
+
+color:#ec4899;
+
+transition:.3s;
+
+}
+
+
+.borrar:hover{
+
+color:#6d28d9;
+
+transform:scale(1.2);
+
+cursor:pointer;
+
+}
+
+
+/* ESTADISTICAS */
+
+#estadistica{
+
+margin-top:25px;
+
+text-align:center;
+
+font-size:1.2rem;
+
+font-weight:bold;
+
+color:white;
+
+text-shadow:0 0 10px #8b5cf6;
+
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:480px){
+
+.logo{
+
+width:110px;
+
+right:10px;
+
+}
+
+
+h1{
+
+font-size:2rem;
+
+margin-top:100px;
+
+}
+
+
+form{
+
+width:95%;
+
+}
+
+
+.lista{
+
+width:95%;
+
+}
+
+}

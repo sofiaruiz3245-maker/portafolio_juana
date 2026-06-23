@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f6f9; /* Fondo gris muy claro */
+    color: #333;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4f46e5; /* Morado elegante */
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.producto {
+    background: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.producto img {
+    width: 90%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.producto h3 {
+    margin: 10px 0 5px;
+    font-size: 0.95em;
+    color: #222;
+}
+
+.producto p {
+    margin: 5px 0;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+.producto button {
+    padding: 8px 12px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85em;
+}
+
+.producto button:hover {
+    background-color: #4338ca;
+}
+
+.carrito h2 {
+    margin-bottom: 10px;
+    color: #4f46e5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #e5e7eb;
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: #4f46e5;
+    color: white;
+}
+
+tbody td[colspan="5"] {
+    text-align: left;
+    color: #666;
+    font-style: italic;
+}
+
+@media (max-width: 1024px) {
+    .productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .producto {
+        width: auto;
+    }
+}

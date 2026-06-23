@@ -1,0 +1,277 @@
+body {
+  font-family: "Dela Gothic One", sans-serif;
+  background-image: url(./images/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  position: relative;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 2px;
+
+  text-shadow:
+    0 0 5px white,
+    0 0 15px #8b5cf6,
+    0 0 25px #ec4899;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+.card {
+  background: rgba(33, 33, 60, 0.85);
+  backdrop-filter: blur(12px);
+
+  padding: 25px;
+
+  border-radius: 25px;
+
+  max-width: 650px;
+
+  margin: 30px auto;
+
+  border: 2px solid rgba(255, 255, 255, 0.2);
+
+  box-shadow:
+    0 0 15px rgba(138, 43, 226, 0.5),
+    0 0 40px rgba(72, 61, 139, 0.3);
+}
+
+
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  gap: 15px;
+  align-items: center;
+}
+
+.form-grid label {
+  color: white;
+  font-weight: bold;
+}
+
+.form-grid input,
+.form-grid select {
+
+  width: 100%;
+
+  padding: 10px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  color: white;
+
+}
+
+.form-grid option {
+
+  background: #24244a;
+
+  color: white;
+
+}
+
+.form-grid input::placeholder {
+
+  color: #d8d8d8;
+
+}
+
+.form-grid input:focus,
+.form-grid select:focus {
+
+  outline: none;
+
+  box-shadow: 0 0 10px #ec4899;
+
+}
+
+
+.btn-form {
+
+  padding: 10px 15px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+
+  color: white;
+
+  transition: 0.4s;
+
+  font-family: "Dela Gothic One", sans-serif;
+
+}
+
+.btn-form:hover {
+
+  transform: scale(1.08);
+
+  background: linear-gradient(135deg, #a855f7, #f472b6);
+
+  box-shadow: 0 0 15px #ec4899;
+
+}
+
+
+
+.producto-preview {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+}
+
+#previewProducto {
+
+  width: 120px;
+
+  height: 120px;
+
+  object-fit: contain;
+
+  border-radius: 15px;
+
+  padding: 8px;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  border: 2px solid rgba(255, 255, 255, 0.3);
+
+  box-shadow: 0 0 15px rgba(236, 72, 153, 0.6);
+
+}
+
+
+
+
+table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  margin-top: 20px;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(10px);
+
+}
+
+th {
+
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+
+  color: white;
+
+}
+
+th,
+td {
+
+  padding: 12px;
+
+  text-align: center;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+td {
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: white;
+
+}
+
+tr:hover {
+
+  background: rgba(255, 255, 255, 0.12);
+
+}
+
+
+
+
+#btnFinalizar {
+
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+
+  padding: 12px 18px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  color: white;
+
+  transition: 0.4s;
+
+}
+
+#btnFinalizar:hover {
+
+  transform: scale(1.05);
+
+  box-shadow: 0 0 15px #22c55e;
+
+}
+
+
+
+
+.total {
+
+  font-size: 1.3rem;
+
+  font-weight: bold;
+
+  color: #facc15;
+
+  text-align: right;
+
+  margin-top: 15px;
+
+}
