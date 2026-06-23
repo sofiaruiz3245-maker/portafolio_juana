@@ -1,0 +1,48 @@
+body{
+    background-image: url(fondo.avif);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-attachment: fixed;
+    background-position: center;
+}
+h1{
+    text-align: center;
+}
+section{
+    gap: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+div{
+    border: 2px solid;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(160, 162, 183, 0.832);
+}
+a{
+    text-decoration: none;
+    background-color: rgb(246, 97, 251);
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px slateblue;
+}
+a:hover{
+    background-color: blueviolet;
+
+}
+@media(max-width:750px) {
+    body{
+        position: relative;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 150px;
+        right: 150px;
+    }
+    
+}
