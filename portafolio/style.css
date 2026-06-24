@@ -34,15 +34,10 @@ a:hover{
 
 }
 @media(max-width:750px) {
-    body{
-        position: relative;
-    }
+
     section{
         display: flex;
         flex-direction: column;
-        position: absolute;
-        left: 150px;
-        right: 150px;
-    }
+    }    
     
 }
